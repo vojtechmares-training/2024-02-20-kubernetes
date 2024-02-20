@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/vojtechmares/kubernetes-training/apps/blue-green
-  tag: blue
+  repository: ghcr.io/vojtechmares/kubernetes-training/apps/hello-world
+  tag: latest
 
 imagePullSecrets: {}
 
