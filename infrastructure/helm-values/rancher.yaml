@@ -1,0 +1,6 @@
+ingress:
+  tls:
+    source: letsEncrypt
+
+hostname: rancher.demo.ddash.cz
+bootstrapPassword: "admin"
