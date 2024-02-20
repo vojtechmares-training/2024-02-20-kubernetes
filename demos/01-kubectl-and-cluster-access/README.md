@@ -1,5 +1,15 @@
 # 01-kubectl-and-cluster-access
 
+```bash
+# linux
+export KUBECONFIG=$(pwd)/../kubeconfig.yaml
+```
+
+```cmd
+# Windows (cmd.exe)
+set KUBECONFIG=./../kubeconfig.yaml
+```
+
 - Share kubeconfig with everyone
 - Access the cluster with kubectl and explore around?
 
