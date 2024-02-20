@@ -25,6 +25,9 @@ resource "digitalocean_loadbalancer" "demo" {
 
   droplet_tag = "k8s:${digitalocean_kubernetes_cluster.demo.id}"
 
+  enable_proxy_protocol = true
+  enable_backend_keepalive = true
+
   healthcheck {
     port     = 32080
     protocol = "tcp"
