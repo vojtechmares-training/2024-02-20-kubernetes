@@ -9,7 +9,7 @@ imagePullSecrets: {}
 ingress:
   enabled: true
   host: helm.demo.ddash.cz
-  ingressClass: nginx
+  className: nginx
   path: /
   pathType: Prefix
   annotations:
