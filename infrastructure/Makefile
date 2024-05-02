@@ -4,8 +4,8 @@ apply:
 
 .PHONY: destroy
 destroy:
-	terraform state list | grep helm_release | xargs -I terraform state rm
-	terraform state list | grep kubectl_manifest | xargs -I terraform state rm
+	terraform state list | grep helm_release | xargs terraform state rm
+	terraform state list | grep kubectl_manifest | xargs terraform state rm
 	terraform destroy -auto-approve
 	sleep 10
 	doctl compute volume list | grep -v ID | awk '{print $$1}' | xargs -I doctl compute volume delete --force
